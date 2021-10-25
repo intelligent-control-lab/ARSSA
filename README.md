@@ -44,7 +44,7 @@ Trial 1: use_cursor=0, standstill_flag=0, noviol_flag=1
 Trial 2: use_cursor=0, standstill_flag=0, noviol_flag=2
 Trial 3: use_cursor=0, standstill_flag=0, noviol_flag=5
 
-Additionally Trajectories are also provided for more review. These are the additional "test[n].mat" where n = {3,4}
+Additionally Trajectories are also provided for more review. These are the additional "test[n].mat" where n = {3,4}. Note that Trial 3 requires additional tuning for RSSA beyond the standard parameters used in the paper. Try kd (k1) = 10 and kphir (kxi) = 200 to avoid collisions.
 
 Futhermore, the actual datasets themselves collected during the runs (including all parameters collected and stored during the simulation) are provided in .mat files for convenience and use in validation:
 
@@ -59,7 +59,7 @@ This will load the .mat file for Method 4, Trial 3. Here, Method 4 uses RSSA (wi
 
 To select between the different methods, there are a number of steps. Default parameters should have the system with RSSA and Robust Safety Index by default
 
-IMPORTANT: Default Parameters for sim should recreate M4, Trial 3.
+IMPORTANT: Default Parameters for sim should recreate M4, Trial 3 if not used in interactive mode.
 
 Note:
 

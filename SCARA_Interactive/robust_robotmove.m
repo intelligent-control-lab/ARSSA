@@ -84,6 +84,7 @@ if status==0
         
         % THIS IS THE FORM OF THE ROBUST SAFETY INDEX
         kphir = 20; % THIS IS OUR CONSTANT THAT WE CAN TUNE
+        %kphir = 200; % THIS IS OUR CONSTANT THAT WE CAN TUNE (test3.mat)
         dxi= (robot.est_param' - [robot.est_param1_mid; robot.est_param2_mid; robot.est_param3_mid]);
         XI = diag([1/robot.est_param1_mid, 1/robot.est_param2_mid, 1/robot.est_param3_mid]); % COVARIANCES
         
@@ -107,7 +108,8 @@ if status==0
         
         dx=robot.mx([1,2,4,5],end)-robot.obs.xstar(:,end);
         dmin=robot.profile{t}.rmin;
-        kd=0.01;
+        kd= 0.01;
+        % kd=10; (test3.mat)
         % Continuous safety index
 
         % PHI FORMULATION

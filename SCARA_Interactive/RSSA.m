@@ -21,7 +21,7 @@ flag=0;%sign that the game is down
 flag1=0;%sign that robot has finished all the task
 flag2=0;%sign that human has finished all the task
 
-use_cursor=0;%use defined agent or cursor
+use_cursor=1;%use defined agent or cursor
 standstill_flag = 0 % use recorded data, stand still
 noviol_flag = 5 % Use some prior defined data Group 2 -- Trial 5
 if use_cursor==0
